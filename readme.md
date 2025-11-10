@@ -122,23 +122,6 @@ The system will:
 3. Calculate optimal allocation using financial planning frameworks
 4. Provide specific SIP recommendations and portfolio allocation
 
-### Advanced Analysis Request
-
-Request comprehensive financial analysis:
-
-```
-Do a complete financial analysis of Reliance Industries
-```
-
-The system will provide an 8-section detailed analysis covering:
-1. Financial Performance (Revenue, Profit, Cash Flow, Debt)
-2. Business Segment Analysis
-3. Industry Trends & Opportunities
-4. Management & Strategy
-5. Macroeconomic Factors
-6. Future Outlook (3-5 years)
-7. Investment Recommendation
-8. Personalized Investment Plan (if profile provided)
 
 ## Configuration Options
 
@@ -162,7 +145,6 @@ from phi.model.openai import OpenAIChat
 model=OpenAIChat(id="gpt-4")
 ```
 
-Don't forget to add `OPENAI_API_KEY` to your `.env` file if using OpenAI.
 
 ### Agent Configuration
 
@@ -242,80 +224,5 @@ The system uses professional financial planning principles:
 - **High-Moderate Risk**: Max 15-20% of equity portfolio
 - **High Risk**: Max 20-25% of equity portfolio
 
-## API Endpoints
-
-The backend API provides the following endpoints:
-
-- `POST /api/chat` - Send financial queries and receive AI-powered responses
-  - Request body: `{"question": "your question", "age": 30, "salary": 300000, "risk": "Moderate"}`
-  - Response: JSON with analysis and recommendations
-
-## Troubleshooting
-
-### Backend Not Starting
-- Ensure port 8000 is not in use
-- Check that all dependencies are installed: `pip install -r requirements.txt`
-- Verify `.env` file exists with valid `GROQ_API_KEY`
-
-### Frontend Not Loading
-- Ensure backend is running on `http://localhost:8000`
-- Check browser console for errors
-- Verify `frontend/index.html` exists
-
-### API Errors
-- Verify your Groq API key is valid and active
-- Check API rate limits on Groq Console
-- Ensure internet connection for data fetching
-
-### No Data Returned
-- Check internet connection (required for YFinance and DuckDuckGo)
-- Verify stock symbols are correct (use NSE format: `RELIANCE.NS`, `TCS.NS`)
-- Some data may be unavailable during market hours
-
-## Limitations & Disclaimers
-
-- **Not Financial Advice**: This system provides informational analysis only. Always consult with certified financial advisors before making investment decisions.
-- **Data Accuracy**: While the system uses real-time data sources, always verify critical information independently.
-- **Market Volatility**: Stock prices and market conditions change rapidly. Analysis is based on data available at query time.
-- **API Dependencies**: System requires active internet connection and valid API keys for full functionality.
-
-## Future Enhancements
-
-Potential improvements for future versions:
-- Portfolio tracking and management
-- Historical performance analysis
-- Multi-stock portfolio optimization
-- Risk assessment scoring
-- Integration with trading platforms
-- Mobile application
-- Advanced charting and visualization
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit pull requests or open issues for bugs and feature requests.
-
-## License
-
-This project is provided as-is for educational and personal use.
-
-## Support
-
-For issues, questions, or suggestions:
-1. Check the troubleshooting section above
-2. Review the code comments in `financial_agent.py`
-3. Open an issue on the project repository
-
-## Acknowledgments
-
-- **Groq** for providing fast and free AI inference
-- **YFinance** for real-time financial data
-- **Phi Framework** for the agent infrastructure
-- **FastAPI** for the robust backend framework
-
----
-
-**Built with ❤️ for Indian Retail Investors**
-
-*Empowering informed investment decisions through AI-powered financial intelligence*
 
 
