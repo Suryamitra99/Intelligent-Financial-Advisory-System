@@ -2,9 +2,7 @@
 
 An AI-powered intelligent financial advisory platform that provides personalized investment guidance and real-time market analysis for Indian retail investors using advanced AI models (Groq) with integrated financial data tools.
 
-![Financial Advisor Interface](image.png)
 
-![Financial Advisor Analysis](image_2.png)
 
 ## Overview
 
@@ -319,4 +317,5 @@ For issues, questions, or suggestions:
 **Built with ❤️ for Indian Retail Investors**
 
 *Empowering informed investment decisions through AI-powered financial intelligence*
+
 
